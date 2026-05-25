@@ -1,38 +1,95 @@
 <!DOCTYPE html>
-
-<html>	
+<html lang="en">
 
 <head>
-	<title>My Portfolio Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Anthony Calinog - Portfolio</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            max-width: 800px; /* or any value you deem fit */
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        img.profile-pic {
+            width: 200px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container">
+        <header>
+            <h1>Paul Anthony Calinog</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-<h1>Paul Anthony Calinog</h1>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile_picture.jpg" alt="Your Name's Profile Picture" class="profile-pic">
+            <p>
+                A brief paragraph about yourself, your background, skills, and experience.
+            </p>
+        </section>
 
-	<p>Hello, I am Paul Anthony Calinog, an inspiring web developer learning web 	development.
-	I'd like to learn coding, programming and design. I am glad we meet here.
-	Please contact me if you like.</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Project 1</a>: Short description of the project.</li>
+                <li><a href="#">Project 2</a>: Short description of another project.</li>
+                <!-- Add more projects as list items -->
+            </ul>
+        </section>
 
-<h2>Here are my sample projects:</h2>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                How to reach you: Email, LinkedIn, GitHub, etc.
+            </p>
+        </section>
 
-	<ol>
-		<li>Project 1 - My Portfolio</li>
-		<li>Project 2 - My Business Website</li>
-	</ol>
-
-<h3>My skills:</h3>
-
-	<p>HTML, CSS, JavaScript, Bootstrap, Angular, VueJS, Laravel, React Js, Python, 	Django.</p>
-
-<h4>Please Contact me:</h4>
-
-	<p>learntechnologytoday101@gmail.com</p>
-
-	<p>sample@gmail.com</p>
-
-<footer>
-	<p>All Rights Reserved  Paul Anthony Calinog 2026</p>
-</footer>
+        <footer>
+            <p>© 2023 by Your Name</p>
+        </footer>
+    </div>
+</body>
 
 </html>
